@@ -1,0 +1,122 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+.footer {
+  background-color: var(--less-black);
+  &__display {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 40px;
+  }
+  &__container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  &__box {
+    padding: 40px 0 20px;
+    margin-right: auto;
+  }
+  &__logo {
+    text-decoration: inherit;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__logo:hover {
+    color: none;
+  }
+  &__element {
+    color: var(--brand-color);
+  }
+  &__address {
+    padding: 10px 0 10px;
+    margin-right: 0;
+  }
+  &__details {
+    color: var(--white);
+    font-family: "Roboto";
+    font-style: normal;
+    left: 215px;
+    top: 1739px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    width: 246px;
+  }
+  &__links {
+    text-decoration: inherit;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__links:hover,
+  &__links:focus {
+    color: var(--brand-color);
+  }
+  &__contact {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-grey);
+    width: 231px;
+  }
+}
+.icons-block {
+  width: 231px;
+  padding: 0;
+  &__heading {
+    padding: auto;
+  }
+  &__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 50px 0px 20px 20px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: auto;
+    padding-left: 0;
+    gap: 10px;
+    cursor: pointer;
+  }
+  &__items {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__items:hover,
+  &__items:focus {
+    background-color: var(--brand-color);
+  }
+  &__social-media {
+    fill: var(--white);
+    margin: 12px;
+  }
+}

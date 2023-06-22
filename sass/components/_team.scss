@@ -1,0 +1,117 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+.dots {
+  list-style: none;
+}
+.section-team {
+  background-color: var(--less-white);
+}
+.team-section-heading {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.team-block {
+  padding-left: 0;
+  &__display {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+  &__members {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__members img {
+    display: block;
+    max-width: 100%;
+  }
+  &__title {
+    background-color: var(--white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    border-top: 0;
+  }
+  &__title h4 {
+    width: 72px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+  &__title p {
+    width: 147px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+  &__text {
+    width: 72px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 0;
+  }
+  &__roles {
+    width: 87px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--grey);
+    padding-bottom: 0;
+  }
+  &__social-media {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    cursor: pointer;
+    margin: auto;
+    padding-left: 0;
+    padding-bottom: 40px;
+    margin: 0;
+  }
+  &__items {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__items:hover,
+  &__items:focus {
+    background-color: var(--brand-color);
+  }
+  &__items:hover > &__icons {
+    fill: var(--white);
+  }
+  &__icons {
+    fill: var(--border-customers);
+    margin: 12px;
+  }
+}
