@@ -67,6 +67,7 @@
     color: var(--brand-color);
   }
   &__navigation {
+    display: none;
     display: flex;
     padding-top: 15px;
     padding-left: 90px;
@@ -149,4 +150,14 @@
   }
 }
 .menu-button {
+  background-color: var(--white);
+
+  &__sign {
+    fill: var(--black);
+    cursor: pointer;
+
+    @include tablet {
+      display: none;
+    }
+  }
 }
