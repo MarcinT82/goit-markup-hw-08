@@ -11,12 +11,6 @@
   --border-customers: #afb1b8;
 }
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
@@ -92,13 +86,12 @@ body {
   align-items: center;
   margin-bottom: 0px;
   height: 80px;
-  width: 1200px;
 }
 .header-main__mobile-button {
   border: none;
 }
 .header-main__sign {
-  background-color: transparent;
+  background-color: var(--white);
   fill: var(--black);
 }
 @media screen and (min-width: 768px) {
@@ -1137,4 +1130,7 @@ body {
   letter-spacing: 0.02em;
   text-align: left;
   color: #757575;
+}
+.mobile-menu-container__close-btn {
+  border: none;
 }/*# sourceMappingURL=main.css.map */

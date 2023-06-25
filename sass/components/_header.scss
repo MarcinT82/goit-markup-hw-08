@@ -41,13 +41,12 @@
     align-items: center;
     margin-bottom: 0px;
     height: 80px;
-    width: 1200px;
   }
   &__mobile-button {
     border: none;
   }
   &__sign {
-    background-color: transparent;
+    background-color: var(--white);
     fill: var(--black);
 
     @include tablet {
