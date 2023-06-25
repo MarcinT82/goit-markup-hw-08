@@ -94,6 +94,18 @@ body {
   height: 80px;
   width: 1200px;
 }
+.header-main__mobile-button {
+  border: none;
+}
+.header-main__sign {
+  background-color: transparent;
+  fill: var(--black);
+}
+@media screen and (min-width: 768px) {
+  .header-main__sign {
+    display: none;
+  }
+}
 .header-main__logo-navigation {
   display: flex;
 }
@@ -197,19 +209,6 @@ body {
 }
 .header-main__links:hover > .header-main__envelope, .header-main__links:hover > .header-main__phone {
   fill: var(--brand-color);
-}
-
-.menu-button {
-  background-color: var(--white);
-}
-.menu-button__sign {
-  fill: var(--black);
-  cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  .menu-button__sign {
-    display: none;
-  }
 }
 
 .section {
@@ -1065,7 +1064,6 @@ body {
 .mobile-menu-container {
   width: 480px;
   height: 796px;
-  background-color: var(--white);
 }
 .mobile-menu-container__navigation {
   display: flex;

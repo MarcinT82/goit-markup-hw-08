@@ -27,13 +27,13 @@
           >
           <button
             type="button"
-            class="menu-button js-open-menu"
+            class="header-main__mobile-button js-open-menu"
             aria-expanded="false"
             area-controls="mobile-menu"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="menu-button__sign"
+              class="header-main__sign"
               width="40px"
               height="40px"
             >
@@ -775,33 +775,31 @@
           </div>
         </div>
       </div>
-      <div class="js-menu-container mobile-menu-container dots">
-        <ul class="mobile-menu-container__navigation">
-          <li><a href="#" class="mobile-menu-container__agency"></a>Agencja</li>
-          <li>
-            <a href="#" class="mobile-menu-container__portfolio"></a>Portfolio
-          </li>
-          <li>
-            <a href="#" class="mobile-menu-container__contact"></a>Kontakt
-          </li>
-        </ul>
-        <ul class="mobile-menu-container__addresses">
-          <li>
-            <a href="#" class="mobile-menu-container__phone"></a>+48 111 111 111
-          </li>
-          <li>
-            <a href="#" class="mobile-menu-container__mail"></a
-            >info@devstudio.com
-          </li>
-        </ul>
-        <ul class="mobile-menu-container__medias">
-          <li><a href="#"></a>Instagram</li>
-          <li><a href="#"></a>Twitter</li>
-          <li><a href="#"></a>Facebook</li>
-          <li><a href="#"></a>LinkedIn</li>
-        </ul>
-      </div>
     </footer>
+
+    <div class="mobile-menu-container dots js-menu-container">
+      <ul class="mobile-menu-container__navigation">
+        <li><a href="#" class="mobile-menu-container__agency"></a>Agencja</li>
+        <li>
+          <a href="#" class="mobile-menu-container__portfolio"></a>Portfolio
+        </li>
+        <li><a href="#" class="mobile-menu-container__contact"></a>Kontakt</li>
+      </ul>
+      <ul class="mobile-menu-container__addresses">
+        <li>
+          <a href="#" class="mobile-menu-container__phone"></a>+48 111 111 111
+        </li>
+        <li>
+          <a href="#" class="mobile-menu-container__mail"></a>info@devstudio.com
+        </li>
+      </ul>
+      <ul class="mobile-menu-container__medias">
+        <li><a href="#"></a>Instagram</li>
+        <li><a href="#"></a>Twitter</li>
+        <li><a href="#"></a>Facebook</li>
+        <li><a href="#"></a>LinkedIn</li>
+      </ul>
+    </div>
 
     <div class="modal is-hidden" data-modal>
       <div class="modal__pop-up">
@@ -914,6 +912,12 @@
     </div>
 
     <script src="./JS/modal.js"></script>
-    <script src="./JS/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./JS/mobile-menu.js"></script>
   </body>
 </html>

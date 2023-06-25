@@ -43,6 +43,17 @@
     height: 80px;
     width: 1200px;
   }
+  &__mobile-button {
+    border: none;
+  }
+  &__sign {
+    background-color: transparent;
+    fill: var(--black);
+
+    @include tablet {
+      display: none;
+    }
+  }
   &__logo-navigation {
     display: flex;
   }
@@ -147,17 +158,5 @@
   &__links:hover > &__envelope,
   &__links:hover > &__phone {
     fill: var(--brand-color);
-  }
-}
-.menu-button {
-  background-color: var(--white);
-
-  &__sign {
-    fill: var(--black);
-    cursor: pointer;
-
-    @include tablet {
-      display: none;
-    }
   }
 }
