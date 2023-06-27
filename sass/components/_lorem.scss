@@ -6,22 +6,48 @@
   list-style: none;
 }
 .section-lorem {
-  padding-bottom: 50px;
+  padding-bottom: 0;
+  @include desktop {
+    padding-bottom: 50px;
+  }
   &__display {
     display: flex;
-    justify-content: space-between;
-    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-left: 20px;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 0;
+    }
   }
   &__box {
-    width: 270px;
+    width: 450px;
+    height: 120px;
     background-color: var(--less-white);
     border-radius: 4px;
     padding: 25px 100px;
+    @include tablet {
+      width: 354px;
+    }
+    @include desktop {
+      width: 270px;
+      padding: 25px 100px;
+    }
   }
   &__box-border {
     display: block;
     margin: auto;
   }
+
   &__heading {
     font-family: "Roboto";
     font-style: normal;
@@ -30,8 +56,13 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    width: 270px;
-    padding: 30px 0 15px 0;
+    width: 450px;
+    padding: 30px 0px 15px 170px;
+
+    @include tablet {
+      width: 270px;
+      padding: 30px 0 15px 0;
+    }
   }
   &__text {
     font-family: "Roboto";
@@ -41,7 +72,14 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: var(--grey);
-    width: 270px;
+    width: 450px;
+    padding-bottom: 30px;
+    @include tablet {
+      width: 354px;
+    }
+    @include desktop {
+      width: 270px;
+    }
   }
 }
 .heading-services {
@@ -60,6 +98,7 @@
   padding: 0;
   &__box {
     position: relative;
+    width: 370px;
   }
   &__label {
     width: 370px;
@@ -73,4 +112,15 @@
     position: absolute;
     top: 225px;
   }
+}
+.pictures {
+  display: none;
+  @include desktop {
+    display: contents;
+  }
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }

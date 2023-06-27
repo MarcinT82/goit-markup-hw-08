@@ -44,10 +44,12 @@
   }
   &__mobile-button {
     border: none;
+    background-color: var(--white);
   }
   &__sign {
-    background-color: var(--white);
+    background-color: transparent;
     fill: var(--black);
+    margin-left: 230px;
 
     @include tablet {
       display: none;
@@ -78,13 +80,31 @@
   }
   &__navigation {
     display: none;
-    display: flex;
-    padding-top: 15px;
-    padding-left: 90px;
+
+    @include tablet {
+      display: flex;
+      padding-top: 15px;
+      padding-left: 90px;
+    }
+    @include desktop {
+      display: flex;
+      padding-top: 15px;
+      padding-left: 90px;
+    }
   }
   &__navigation-contact {
-    display: flex;
-    padding-right: 40px;
+    display: none;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      padding-right: 40px;
+    }
   }
   &__link {
     font-style: normal;

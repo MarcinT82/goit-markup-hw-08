@@ -4,33 +4,89 @@
 }
 .section-index {
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 480px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/4.1.jpg);
+    url(../images/hero480px1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 600px;
+  @media (main-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2ppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero480px2x.jpg);
+  }
+  @include tablet {
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero768px1x.jpg);
+    @media (main-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2ppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero768px2x.jpg);
+    }
+  }
+  @include desktop {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero1600px1x.jpg);
+    @media (main-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2ppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero1600px2x.jpg);
+    }
+  }
   &__container {
-    padding-top: 100px;
-    padding-bottom: 40px;
+    @include desktop {
+      padding-top: 100px;
+      padding-bottom: 40px;
+    }
   }
   &__header {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 42px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
     margin: 0 auto;
-    width: 696px;
+    width: 365px;
+    @include desktop {
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
   &__box {
     display: flex;

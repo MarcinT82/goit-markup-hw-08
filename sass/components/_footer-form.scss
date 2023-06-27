@@ -1,6 +1,15 @@
 .footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 50px 0 0px 0px;
   margin: 0;
+  @include tablet {
+    padding-left: 40px;
+  }
+  @include desktop {
+    display: block;
+  }
   &__text {
     width: 207px;
     height: 16px;
@@ -18,7 +27,14 @@
   }
   &__input-button {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 15px;
+    padding-bottom: 50px;
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+    }
   }
   &__input {
     background-color: var(--less-black);

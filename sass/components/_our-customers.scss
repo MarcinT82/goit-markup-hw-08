@@ -15,19 +15,34 @@
 }
 .customers-list {
   display: flex;
-  justify-content: center;
-  gap: 0 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
   list-style: none;
-  padding-left: 0;
-  cursor: pointer;
+  padding-left: 25px;
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+    list-style: none;
+    padding-left: 0;
+    cursor: pointer;
+  }
+
   &__box {
-    width: 170px;
+    width: 210px;
     border: 1px solid var(--border-customers);
     border-radius: 4px;
     fill: var(--border-customers);
     transition-property: border, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include tablet {
+      width: 240px;
+    }
+    @include desktop {
+      width: 170px;
+    }
   }
   &__box:hover {
     border: 2px solid var(--brand-color);

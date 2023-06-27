@@ -129,7 +129,7 @@
                 <div class="section-lorem__box">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="65.32px"
+                    width="70px"
                     height="70px"
                     class="section-lorem__box-border"
                   >
@@ -147,7 +147,7 @@
                 <div class="section-lorem__box">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="66.96px"
+                    width="70px"
                     height="70px"
                     class="section-lorem__box-border"
                   >
@@ -164,7 +164,7 @@
                 <div class="section-lorem__box">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="53.69px"
+                    width="70px"
                     height="70px"
                     class="section-lorem__box-border"
                   >
@@ -181,7 +181,7 @@
                 <div class="section-lorem__box">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="60.66px"
+                    width="70px"
                     height="70px"
                     class="section-lorem__box-border"
                   >
@@ -196,43 +196,53 @@
               </li>
             </ul>
           </div>
-
-          <h2 class="heading-services">Czym się zajmujemy</h2>
-          <ul class="dots images-list">
-            <li>
-              <div class="images-list__box">
-                <img
-                  src="images/img1.jpg"
-                  alt="Ręce na klawiaturze"
-                  width="370"
-                  height="294"
-                />
-                <p class="images-list__label">Aplikacje komputerowe</p>
-              </div>
-            </li>
-            <li>
-              <div class="images-list__box">
-                <img
-                  src="images/img2.jpg"
-                  alt="Smartfon w dłoniach"
-                  width="370"
-                  height="294"
-                />
-                <p class="images-list__label">Aplikacje mobilne</p>
-              </div>
-            </li>
-            <li>
-              <div class="images-list__box">
-                <img
-                  src="images/img3.jpg"
-                  alt="Tablet w dłoni"
-                  width="370"
-                  height="294"
-                />
-                <p class="images-list__label">Rozwiązania graficzne</p>
-              </div>
-            </li>
-          </ul>
+          <div class="pictures">
+            <h2 class="heading-services">Czym się zajmujemy</h2>
+            <ul class="dots images-list">
+              <li>
+                <div class="images-list__box">
+                  <img
+                    src="images/img1.jpg"
+                    alt="Ręce na klawiaturze"
+                    srcset="
+                      images/1hands-on-keyboard1x.jpg 370w,
+                      images/1hands-on-keyboard2x.jpg 740w
+                    "
+                    size="(min-width: 1200px) 370px, 740px 100vw"
+                  />
+                  <p class="images-list__label">Aplikacje komputerowe</p>
+                </div>
+              </li>
+              <li>
+                <div class="images-list__box">
+                  <img
+                    src="images/img2.jpg"
+                    alt="Smartfon w dłoniach"
+                    srcset="
+                      images/2mobile-in-hands1x.jpg 370w,
+                      images/2mobile-in-hands2x.jpg 740w
+                    "
+                    size="(min-width: 1200px) 370px, 740px 100vw"
+                  />
+                  <p class="images-list__label">Aplikacje mobilne</p>
+                </div>
+              </li>
+              <li>
+                <div class="images-list__box">
+                  <img
+                    src="images/img3.jpg"
+                    alt="Tablet w dłoni"
+                    srcset="
+                      images/3tablet-in-hands1x.jpg 370w,
+                      images/3tablet-in-hands2x.jpg 740w
+                    "
+                    size="(min-width: 1200px) 370px, 740px 100vw"
+                  />
+                  <p class="images-list__label">Rozwiązania graficzne</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -250,8 +260,15 @@
                     <img
                       src="images/img4.jpg"
                       alt="John Doe.Product Designer"
-                      width="270"
-                      height="260"
+                      srcset="
+                        images/Member1mobile1x.jpg  450w,
+                        images/Member1mobile2x.jpg  900w,
+                        images/Member1tablet1x.jpg  354w,
+                        images/Member1tablet2x.jpg  708w,
+                        images/Member1desktop1x.jpg 270w,
+                        images/Member1desktop2x.jpg 540w
+                      "
+                      sizes="(min-width: 768) 354px, (min-width: 1200px) 27ow, 100w"
                     />
                     <figcaption class="team-block__title">
                       <h4 class="team-block__text">John Doe</h4>
@@ -332,8 +349,15 @@
                     <img
                       src="images/img5.jpg"
                       alt="Kate Doe.Frontend Developer"
-                      width="270"
-                      height="260"
+                      srcset="
+                        images/Member2mobile1x.jpg  450w,
+                        images/Member2mobile2x.jpg  900w,
+                        images/Member2tablet1x.jpg  354w,
+                        images/Member2tablet2x.jpg  708w,
+                        images/Member2desktop1x.jpg 270w,
+                        images/Member2desktop2x.jpg 540w
+                      "
+                      sizes="(min-width: 768) 354px, (min-width: 1200px) 27ow, 100w"
                     />
                     <figcaption class="team-block__title">
                       <h4 class="team-block__text">Kate Doe</h4>
@@ -414,8 +438,15 @@
                     <img
                       src="images/img6.jpg"
                       alt="John Doe.Marketing"
-                      width="270"
-                      height="260"
+                      srcset="
+                        images/Member3mobile1x.jpg  450w,
+                        images/Member3mobile2x.jpg  900w,
+                        images/Member3tablet1x.jpg  354w,
+                        images/Member3tablet2x.jpg  708w,
+                        images/Member3desktop1x.jpg 270w,
+                        images/Member3desktop2x.jpg 540w
+                      "
+                      sizes="(min-width: 768) 354px, (min-width: 1200px) 27ow, 100w"
                     />
                     <figcaption class="team-block__title">
                       <h4 class="team-block__text">John Doe</h4>
@@ -496,8 +527,15 @@
                     <img
                       src="images/img7.jpg"
                       alt="John Doe.UI Designer"
-                      width="270"
-                      height="260"
+                      srcset="
+                        images/Member4mobile1x.jpg  450w,
+                        images/Member4mobile2x.jpg  900w,
+                        images/Member4tablet1x.jpg  354w,
+                        images/Member4tablet2x.jpg  708w,
+                        images/Member4desktop1x.jpg 270w,
+                        images/Member4desktop2x.jpg 540w
+                      "
+                      sizes="(min-width: 768) 354px, (min-width: 1200px) 27ow, 100w"
                     />
                     <figcaption class="team-block__title">
                       <h4 class="team-block__text">John Doe</h4>
@@ -777,37 +815,81 @@
       </div>
     </footer>
 
-    <div
-      class="mobile-menu-container dots js-menu-container is-open"
-      id="mobile-menu"
-    >
+    <div class="mobile-menu-container dots js-menu-container" id="mobile-menu">
       <button
         type="button"
         class="mobile-menu-container__close-btn js-close-menu"
       >
         x
       </button>
-      <ul class="mobile-menu-container__navigation">
-        <li><a href="#" class="mobile-menu-container__agency"></a>Agencja</li>
-        <li>
-          <a href="#" class="mobile-menu-container__portfolio"></a>Portfolio
-        </li>
-        <li><a href="#" class="mobile-menu-container__contact"></a>Kontakt</li>
-      </ul>
-      <ul class="mobile-menu-container__addresses">
-        <li>
-          <a href="#" class="mobile-menu-container__phone"></a>+48 111 111 111
-        </li>
-        <li>
-          <a href="#" class="mobile-menu-container__mail"></a>info@devstudio.com
-        </li>
-      </ul>
-      <ul class="mobile-menu-container__medias">
-        <li><a href="#"></a>Instagram</li>
-        <li><a href="#"></a>Twitter</li>
-        <li><a href="#"></a>Facebook</li>
-        <li><a href="#"></a>LinkedIn</li>
-      </ul>
+      <div class="mobile-menu-container__main">
+        <ul class="mobile-menu-container__navigation dots">
+          <li>
+            <a
+              href="index.html"
+              class="mobile-menu-container__agency mobile-menu-container__agency-color mobile-menu-container__links"
+              >Agencja</a
+            >
+          </li>
+          <li>
+            <a
+              href="/portfolio.html"
+              class="mobile-menu-container__portfolio mobile-menu-container__links"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="mobile-menu-container__contact mobile-menu-container__links"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+        <div class="mobile-menu-container__contact-links">
+          <ul class="mobile-menu-container__addresses dots">
+            <li class="mobile-menu-container__phone">
+              <a
+                href="tel:+48111111111"
+                class="mobile-menu-container__social-medias"
+                >+48 111 111 111</a
+              >
+            </li>
+            <li class="mobile-menu-container__mail">
+              <a
+                href="mailto:info@example.com"
+                class="mobile-menu-container__social-medias-mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu-container__medias dots">
+            <li>
+              <a href="#" class="mobile-menu-container__social-medias"
+                >Instagram</a
+              >
+              |
+            </li>
+            <li>
+              <a href="#" class="mobile-menu-container__social-medias"
+                >Twitter</a
+              >
+              |
+            </li>
+            <li>
+              <a href="#" class="mobile-menu-container__social-medias"
+                >Facebook</a
+              >
+              |
+            </li>
+            <li>
+              <a href="#" class="mobile-menu-container__social-medias"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="modal is-hidden" data-modal>
@@ -920,7 +1002,6 @@
       </div>
     </div>
 
-    <script src="./JS/modal.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -928,5 +1009,6 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./JS/mobile-menu.js"></script>
+    <script src="./JS/modal.js"></script>
   </body>
 </html>

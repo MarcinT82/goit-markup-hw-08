@@ -2,8 +2,23 @@
   background-color: var(--less-black);
   &__display {
     display: flex;
-    gap: 50px;
-    padding-bottom: 40px;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 0;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding-bottom: 40px;
+      padding-left: 100px;
+    }
   }
   &__container {
     margin: 0;
@@ -12,8 +27,12 @@
     flex-direction: column;
   }
   &__box {
-    padding: 40px 0 20px;
-    margin-right: auto;
+    padding: 40px 0px 20px 150px;
+
+    @include desktop {
+      padding: 40px 0 20px 100px;
+      margin-right: auto;
+    }
   }
   &__logo {
     text-decoration: inherit;
@@ -35,7 +54,7 @@
     color: var(--brand-color);
   }
   &__address {
-    padding: 10px 0 10px;
+    padding: 0 100px;
     margin-right: 0;
   }
   &__details {
@@ -49,6 +68,13 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     width: 246px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    @include desktop {
+      display: block;
+    }
   }
   &__links {
     text-decoration: inherit;
@@ -72,8 +98,15 @@
   }
 }
 .icons-block {
-  width: 231px;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px 0 0;
+
+  @include desktop {
+    width: 231px;
+    padding: 0 80px 0 0;
+  }
   &__heading {
     padding: auto;
   }
