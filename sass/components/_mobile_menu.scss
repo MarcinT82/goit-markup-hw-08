@@ -117,4 +117,7 @@
   @include tablet {
     display: none;
   }
+  &__close-btn:hover {
+    color: var(--brand-color);
+  }
 }
