@@ -8,7 +8,9 @@
     padding-left: 30px;
   }
   @include desktop {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   &__text {
     width: 207px;
