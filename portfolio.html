@@ -24,6 +24,21 @@
           <a class="header-main__logo" href="#"
             ><span class="header-main__element">Web</span>Studio</a
           >
+          <button
+            type="button"
+            class="header-main__mobile-button js-open-menu"
+            aria-expanded="false"
+            area-controls="mobile-menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="header-main__sign"
+              width="40px"
+              height="40px"
+            >
+              <use href="./images/icons.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
           <nav>
             <ul class="dots header-main__navigation">
               <li>
@@ -501,5 +516,89 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu-container dots js-menu-container" id="mobile-menu">
+      <button
+        type="button"
+        class="mobile-menu-container__close-btn js-close-menu"
+      >
+        X
+      </button>
+      <div class="mobile-menu-container__main">
+        <ul class="mobile-menu-container__navigation dots">
+          <li>
+            <a
+              href="index.html"
+              class="mobile-menu-container__agency mobile-menu-container__links"
+              >Agencja</a
+            >
+          </li>
+          <li>
+            <a
+              href="/portfolio.html"
+              class="mobile-menu-container__portfolio mobile-menu-container__portfolio-color mobile-menu-container__links"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="mobile-menu-container__contact mobile-menu-container__links"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+        <div class="mobile-menu-container__contact-links">
+          <ul class="mobile-menu-container__addresses dots">
+            <li class="mobile-menu-container__phone">
+              <a
+                href="tel:+48111111111"
+                class="mobile-menu-container__social-medias"
+                >+48 111 111 111</a
+              >
+            </li>
+            <li class="mobile-menu-container__mail">
+              <a
+                href="mailto:info@example.com"
+                class="mobile-menu-container__social-medias-mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu-container__medias dots">
+            <li>
+              <a href="#" class="mobile-menu-container__social-medias"
+                >Instagram</a
+              >
+              |
+            </li>
+            <li>
+              <a href="#" class="mobile-menu-container__social-medias"
+                >Twitter</a
+              >
+              |
+            </li>
+            <li>
+              <a href="#" class="mobile-menu-container__social-medias"
+                >Facebook</a
+              >
+              |
+            </li>
+            <li>
+              <a href="#" class="mobile-menu-container__social-medias"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./JS/mobile-menu.js"></script>
   </body>
 </html>

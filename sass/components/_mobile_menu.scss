@@ -48,6 +48,9 @@
     height: 48px;
     color: #212121;
   }
+  &__portfolio-color {
+    color: var(--brand-color);
+  }
   &__contact {
     width: 192px;
     height: 48px;
