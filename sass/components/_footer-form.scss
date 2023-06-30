@@ -5,7 +5,7 @@
   padding: 50px 0 0px 0px;
   margin: 0;
   @include tablet {
-    padding-left: 40px;
+    padding-left: 30px;
   }
   @include desktop {
     display: block;
@@ -24,6 +24,7 @@
   }
   &__container {
     padding-top: 5px;
+    padding-right: 0;
   }
   &__input-button {
     display: flex;
@@ -34,6 +35,8 @@
     @include desktop {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      gap: 10px;
     }
   }
   &__input {

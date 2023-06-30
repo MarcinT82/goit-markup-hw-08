@@ -3,12 +3,13 @@
   &__display {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 
     @include tablet {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 30px;
       margin: 0;
     }
@@ -108,11 +109,21 @@
 .icons-block {
   display: flex;
   flex-direction: column;
-  padding: 0 40px 0 0;
+  align-items: center;
+  padding: 0;
 
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 0;
+  }
   @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 231px;
     padding-left: 30px;
+    padding-bottom: 50px;
   }
   &__heading {
     padding: auto;
