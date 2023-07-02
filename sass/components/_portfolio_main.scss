@@ -1,9 +1,19 @@
+.button-container {
+  padding: 20px;
+}
 .navigation-list {
   display: flex;
-  padding: 70px 20px 30px;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 10px;
-  margin: 0;
+
+  @include tablet {
+    display: flex;
+    padding: 70px 20px 30px;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+  }
   &__buttons {
     cursor: pointer;
     border: none;
